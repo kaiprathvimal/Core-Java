@@ -42,6 +42,10 @@ public class Array {
             System.out.println(arry1[i].rollNo + " " + arry1[i].name + " " + arry1[i].mark);
         }
 
+        for(ObjectArray obj2 : arry1) {
+            System.out.println(obj2.rollNo + ": " + obj2.name + ": " + obj2.mark);
+        }
+
 
     }
 }
