@@ -23,7 +23,31 @@ public class Array {
             System.out.println();
         }
 
+        ObjectArray s1 = new ObjectArray();
+        s1.rollNo = 10;
+        s1.name = "vimal";
+        s1.mark = 12;
+
+        ObjectArray s2 = new ObjectArray();
+
+        s2.rollNo = 11;
+        s2.name = "vimala";
+        s2.mark = 122;
+
+        ObjectArray arry1[] = new ObjectArray[2];
+        arry1[0] = s1;
+        arry1[1] = s2;
+
+        for(int i =0;i<arry1.length;i++) {
+            System.out.println(arry1[i].rollNo + " " + arry1[i].name + " " + arry1[i].mark);
+        }
 
 
     }
+}
+
+class ObjectArray {
+    int rollNo;
+    String name;
+    int mark;
 }
